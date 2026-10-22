@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mário Encanador</title>
+    <link rel="icon" type="immage/png" href="./img/icons8-super-mario-48.png">
+</head>
+
+<body>
+    <header class="Cabecalho">
+        <img src="./img/logo-header.png" alt="logo-Cabecalho">
+        <a> Home</a>
+        <a class="form" onclick="FaleForm()"> Fale conosco</a>
+        <a href="servicos.html"> Nossos Serviços</a>
+    </header>
+    <div class="caixa-principal">
+        <div class="caixa-info-text">
+            <img src="./img/logo.png" alt="Logo-super-mario-bross" class="Logo-super-mario-bross" />
+
+            <p>
+                🔧 Encanadores Mario & Luigi - Resolvendo Seus Problemas Hidráulicos Com Estilo! 🔧
+            </p>
+
+            <p>
+                Você já se encontrou em uma situação de emergência com encanamento?
+                <br> Inesperados, canos entupidos ou torneiras que não param de pingar?
+                <br> Não se preocupe, porque estamos aqui para salvar o dia!
+                Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!
+            </p>
+
+            <button onclick="mostrarForm()" class="bnt">Entre em contato</button>
+        </div>
+        <div class="irmaosMario">
+            <img src="./img/mario.png" alt="Foto-Mário-e-Luigi" class="logo-luigi-mario" />
+
+        </div>
+    </div>
+
+        <div class="caixa-video">
+
+            <video src="./img/video.mp4" autoplay loop muted></video>
+            <div class="mascara-video"> 
+
+        </div>
+
+    </div>
+
+    <div class="caixa-link-wpp">
+
+        <a class="link-wpp" href="https://w.app/xaj2rg">
+            <img src="./img/whatsapp.png" alt="logo-whatsapp">
+        </a>
+
+    </div>
+
+    <form class="formulario" action="https://formcarry.com/s/JwNXL0HF7lc" method="POST" enctype="multipart/form-data">
+        <input placeholder="Seu Nome..." type="text" name="Nome" />
+        <input placeholder="Seu E-mail..." type="email" name="email" />
+        <textarea placeholder="Digite seu problema aqui..." name="problema"></textarea>
+        <button type="submit"> Pedir Orçamento </button>
+    </form>
+
+    <div class="mascara-form" onclick="esconderForm()"></div>
+
+</body>
+
+<script src="scripts.js"></script>
+
+</html>

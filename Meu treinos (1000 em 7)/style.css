@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mukta", sans-serif;
+
+
+}
+
+.Logo-super-mario-bross {
+    width: 350px;
+
+}
+
+button {
+    background-color: #c51111;
+    color: white;
+    width: 200px;
+    height: 50px;
+    border-radius: 3px;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.logo-luigi-mario {
+    height: 500px;
+
+}
+
+.caixa-info-text {
+    width: 40%;
+}
+
+body {
+    height: 100vh;
+}
+
+.caixa-principal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px;
+    height: 100vh;
+}
+
+.caixa-video {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+video {
+    min-width: 100vw;
+    min-height: 100vh;
+
+}
+
+.mascara-video {
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+
+}
+
+p {
+    color: white;
+    font-size: 15px;
+
+}
+
+.Cabecalho {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+
+}
+
+.Cabecalho img {
+    width: 70px;
+}
+
+.Cabecalho a {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.Cabecalho a:hover {
+    color: #c51111;
+    transition: 0.5s ease-in-out;
+    transform: translateY(-2px);
+}
+
+.Cabecalho a:active {
+    transform: scale(0.85);
+}
+
+.caixa-link-wpp {
+    position: fixed;
+    bottom: 15px;
+    right: 12px;
+    cursor: pointer;
+}
+
+.link-wpp img {
+    width: 60px;
+}
+
+.link-wpp {
+    cursor: pointer;
+}
+
+form {
+    background-color: white;
+    position: fixed;
+    top: 30%;
+    left: -340px;
+
+    flex-direction: column;
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 3px;
+    width: 350px;
+    z-index: 1;
+    transition: 0.5s left ease-in-out;
+}
+
+form input {
+    height: 25px;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    outline-color: #18d80f;
+}
+
+form textarea {
+    height: 85px;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    outline-color: #18d80f;
+    max-width: 100%;
+}
+
+
+.bnt:hover {
+    transform: translateY(-2px);
+}
+
+.bnt:active {
+    transform: scale(0.95);
+}
+
+.mascara-form {
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    visibility: hidden;
+    transition: 0.5s visibility ease-in-out;
+}
+
+@media (max-width: 1100px) {
+    .Logo-super-mario-bross {
+        display: none;
+    }
+
+    .caixa-principal {
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .caixa-info-text {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-luigi-mario {
+        height: auto;
+        width: 80%;
+    }
+
+    .irmaosMario {
+
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .Cabecalho {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        padding: 10px;
+    }
+
+    .Cabecalho img {
+        width: 50px;
+    }
+
+    .Cabecalho a {
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        text-decoration: none;
+
+    }
+}
